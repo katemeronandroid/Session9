@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:text="Цвет текста" />
+
+        <RadioGroup
+            android:id="@+id/radiogroupColor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Черный" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Серый"
+                android:textColor="@android:color/darker_gray" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Синий"
+                android:textColor="@color/colorPrimary" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:text="Размер текста" />
+
+        <RadioGroup
+            android:id="@+id/radiogroupSize"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:text="Маленький"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:text="Средний" />
+
+            <RadioButton
+                android:id="@+id/radioButton6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:text="Большой"
+                android:textSize="18sp" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:text="Стиль текста" />
+
+        <RadioGroup
+            android:id="@+id/radiogroupStyle"
+            android:layout_width="match_parent"
+            android:layout_height="130dp">
+
+            <RadioButton
+                android:id="@+id/radioButton7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Обычный" />
+
+            <RadioButton
+                android:id="@+id/radioButton8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Жирный"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radioButton9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Курсив"
+                android:textStyle="italic" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onSaveSettings"
+            android:text="Сохранить" />
+    </LinearLayout>
+
+
+</LinearLayout>
