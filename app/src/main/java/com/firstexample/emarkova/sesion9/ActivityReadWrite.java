@@ -1,5 +1,6 @@
 package com.firstexample.emarkova.sesion9;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -14,11 +15,11 @@ import java.util.ArrayList;
 
 public class ActivityReadWrite extends AppCompatActivity {
     private boolean write = false;
-    FragmentTransaction fragmentTransaction;
-    DBManager manager;
-    ArrayList<String> data;
-    String date;
-    DataStorage storage;
+    private FragmentTransaction fragmentTransaction;
+    private DBManager manager;
+    private ArrayList<String> data;
+    private String date;
+    private DataStorage storage;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

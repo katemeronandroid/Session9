@@ -22,6 +22,10 @@
         </activity>
         <activity android:name=".ActivitySettings">
         </activity>
+        <provider
+            android:authorities="com.firstexample.emarkova.sesion9.TryProvider"
+            android:name=".TryProvider"
+            android:exported="true"/>
     </application>
 
 </manifest>

@@ -19,9 +19,9 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
     private static final int SPACE = 25;
-    DBManager manager;
-    SharedPreferences mSettings;
-    DataStorage storage;
+    private DBManager manager;
+    private SharedPreferences mSettings;
+    private DataStorage storage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,9 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
-        Intent intent = new Intent(MainActivity.this, MainActivity.class);
-        startActivity(intent);
+        moveTaskToBack(true);
     }
 
     public void onCreateNote(View view) {

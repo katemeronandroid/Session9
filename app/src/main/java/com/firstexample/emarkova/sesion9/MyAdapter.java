@@ -2,6 +2,7 @@ package com.firstexample.emarkova.sesion9;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,12 +22,14 @@ class MyAdapter extends RecyclerView.Adapter {
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+        Log.d("Logs", "create" + String.valueOf(i));
         View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_layout, viewGroup, false);
         MyViewHolder holder = new MyViewHolder(view);
         return holder;
     }
 
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder viewHolder, int position) {
+        Log.d("Logs", String.valueOf(position));
         ((MyViewHolder) viewHolder).mTextView.setText(mDataName.get(position));
         ((MyViewHolder) viewHolder).mTextDate.setText(mDataDate.get(position));
     }

@@ -1,5 +1,6 @@
 package com.firstexample.emarkova.sesion9;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -13,8 +14,8 @@ import java.util.Date;
 
 public class ActivityCreate extends AppCompatActivity {
     private static final String LOG_TAG = "LOGTAG";
-    DBManager manager;
-    EditText noteName;
+    private DBManager manager;
+    private EditText noteName;
     EditText noteText;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

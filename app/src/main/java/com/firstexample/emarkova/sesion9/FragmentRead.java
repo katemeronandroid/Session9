@@ -1,5 +1,6 @@
 package com.firstexample.emarkova.sesion9;
 
+
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -11,9 +12,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 public class FragmentRead extends Fragment {
-    TextView name;
-    TextView text;
-    DataStorage storage;
+    private TextView name;
+    private TextView text;
+    private DataStorage storage;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

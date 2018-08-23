@@ -1,5 +1,6 @@
 package com.firstexample.emarkova.sesion9;
 
+
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -11,7 +12,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 public class ActivitySettings extends AppCompatActivity {
-    DataStorage storage;
+     private DataStorage storage;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
